@@ -1,0 +1,16 @@
+/* src/styles/fonts.css */
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/SFPRODISPLAYREGULAR.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/SFPRODISPLAYBOLD.otf") format("opentype");
+}

@@ -18,6 +18,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"SF Pro Display"', 'system-ui',],
+      },
       colors: {
         lumi: {
           red: "#C41E3A",
