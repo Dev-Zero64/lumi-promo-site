@@ -1,19 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-
-import {
-  ArrowRight,
-  ChevronLeft,
-  ChevronRight,
-  CheckCircle,
-  Stethoscope,
-  Calendar,
-  Bell,
-  HeartPulse,
-  Shield,
-  Menu,
-  X,
-} from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 
 export const NavigationBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,17 +25,24 @@ export const NavigationBar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-8">
-            <img
-              src="/images/lumilogo.png"
-              alt="Lumi Logo"
-              className="h-12 w-auto transition-transform duration-300 hover:scale-105"
-            />
+            <a
+              href="/"
+              className="flex items-center gap-2 text-gray-700 hover:text-lumi-red transition-colors duration-200"
+            >
+              {" "}
+              <img
+                src="/images/lumilogo.png"
+                alt="Lumi Logo"
+                className="h-12 w-auto transition-transform duration-300 hover:scale-105"
+              />{" "}
+            </a>
+
             <div className="font-sans">Lumi: Caderneta da Gestante</div>
             <div className="hidden md:flex gap-8">
-              {["Galeria", "Sobre"].map((item, index) => (
+              {["Inicio", "Galeria", "Sobre"].map((item, index) => (
                 <a
                   key={index}
-                  href={`#${item.toLowerCase()}`}
+                  href={`/${item.toLowerCase()}`}
                   className="relative text-gray-700 hover:text-lumi-red transition-colors duration-200 font-medium group"
                 >
                   {item}
