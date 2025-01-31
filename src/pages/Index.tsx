@@ -23,14 +23,18 @@ const NavigationBar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 shadow-lg backdrop-blur-md py-2' : 'bg-transparent py-4'
-    }`}>
+    <nav
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-white/95 shadow-lg backdrop-blur-md py-2"
+          : "bg-transparent py-4"
+      }`}
+    >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-8">
@@ -40,7 +44,7 @@ const NavigationBar = () => {
               className="h-12 w-auto transition-transform duration-300 hover:scale-105"
             />
             <div className="hidden md:flex gap-8">
-              {['Funções', 'Galeria', 'Baixar'].map((item, index) => (
+              {["Lumi: Caderneta da Gestante"].map((item, index) => (
                 <a
                   key={index}
                   href={`#${item.toLowerCase()}`}
@@ -52,10 +56,15 @@ const NavigationBar = () => {
               ))}
             </div>
           </div>
-          
+
           <Button
             className="hidden md:flex bg-gradient-to-r from-lumi-red to-pink-500 hover:from-lumi-red/90 hover:to-pink-500/90 text-white rounded-full px-6 py-2 transition-all duration-300 hover:scale-105"
-            onClick={() => window.open("https://apps.apple.com/br/app/lumi-caderneta-da-gestante/id6467932410?l=en-GB", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://apps.apple.com/br/app/lumi-caderneta-da-gestante/id6467932410?l=en-GB",
+                "_blank"
+              )
+            }
           >
             Baixar Agora
             <ArrowRight className="ml-2 h-4 w-4" />
@@ -70,11 +79,13 @@ const NavigationBar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden transition-all duration-300 overflow-hidden ${
-          isMobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-        }`}>
+        <div
+          className={`md:hidden transition-all duration-300 overflow-hidden ${
+            isMobileMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
           <div className="py-4 space-y-4">
-            {['Funções', 'Galeria', 'Baixar'].map((item, index) => (
+            {["Funções", "Galeria", "Baixar"].map((item, index) => (
               <a
                 key={index}
                 href={`#${item.toLowerCase()}`}
@@ -119,7 +130,12 @@ const HeroSection = ({
           <Button
             size="lg"
             className="bg-gradient-to-r from-lumi-red to-pink-500 hover:from-lumi-red/90 hover:to-pink-500/90 text-white rounded-full px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            onClick={() => window.open("https://apps.apple.com/br/app/lumi-caderneta-da-gestante/id6467932410?l=en-GB", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://apps.apple.com/br/app/lumi-caderneta-da-gestante/id6467932410?l=en-GB",
+                "_blank"
+              )
+            }
           >
             Baixar para iOS
             <ArrowRight className="ml-2 h-5 w-5" />
@@ -186,7 +202,9 @@ const FeaturesSection = ({ features }) => (
           <div className="text-lumi-red mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
             {feature.icon}
           </div>
-          <h3 className="text-xl font-semibold mb-4 text-gray-800">{feature.title}</h3>
+          <h3 className="text-xl font-semibold mb-4 text-gray-800">
+            {feature.title}
+          </h3>
           <p className="text-gray-600">{feature.description}</p>
         </div>
       ))}
@@ -230,13 +248,19 @@ const CtaSection = () => (
       Comece agora sua jornada
     </h2>
     <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-      Disponível gratuitamente para iOS e Android. Sua saúde merece o melhor cuidado.
+      Disponível gratuitamente para iOS e Android. Sua saúde merece o melhor
+      cuidado.
     </p>
     <div className="flex justify-center gap-4">
       <Button
         size="lg"
         className="bg-gradient-to-r from-lumi-red to-pink-500 hover:from-lumi-red/90 hover:to-pink-500/90 text-white rounded-full px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-lg"
-        onClick={() => window.open("https://apps.apple.com/br/app/lumi-caderneta-da-gestante/id6467932410?l=en-GB", "_blank")}
+        onClick={() =>
+          window.open(
+            "https://apps.apple.com/br/app/lumi-caderneta-da-gestante/id6467932410?l=en-GB",
+            "_blank"
+          )
+        }
       >
         Baixar para iOS
         <ArrowRight className="ml-2 h-5 w-5" />
@@ -251,7 +275,9 @@ const Index = () => {
     setCurrentScreenshot((prev) => (prev + 1) % screenshots.length);
   };
   const prevScreenshot = () => {
-    setCurrentScreenshot((prev) => (prev - 1 + screenshots.length) % screenshots.length);
+    setCurrentScreenshot(
+      (prev) => (prev - 1 + screenshots.length) % screenshots.length
+    );
   };
 
   return (
