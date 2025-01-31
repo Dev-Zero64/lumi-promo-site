@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const NavigationBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,8 +26,8 @@ export const NavigationBar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-8">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="flex items-center gap-2 text-gray-700 hover:text-lumi-red transition-colors duration-200"
             >
               {" "}
@@ -35,19 +36,18 @@ export const NavigationBar = () => {
                 alt="Lumi Logo"
                 className="h-12 w-auto transition-transform duration-300 hover:scale-105"
               />{" "}
-            </a>
-
+            </Link>
             <div className="font-sans">Lumi: Caderneta da Gestante</div>
             <div className="hidden md:flex gap-8">
               {["Inicio", "Galeria", "Sobre"].map((item, index) => (
-                <a
+                <Link
                   key={index}
-                  href={`/${item.toLowerCase()}`}
-                  className="relative text-gray-700 hover:text-lumi-red transition-colors duration-200 font-medium group"
+                  to={`/${item.toLowerCase()}`}
+                  className="block text-gray-700 hover:text-lumi-red transition-colors duration-200 py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-lumi-red transition-all duration-300 group-hover:w-full" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -81,14 +81,14 @@ export const NavigationBar = () => {
         >
           <div className="py-4 space-y-4">
             {["Inicio", "Galeria", "Sobre"].map((item, index) => (
-              <a
+              <Link
                 key={index}
-                href={`#${item.toLowerCase()}`}
+                to={`/${item.toLowerCase()}`}
                 className="block text-gray-700 hover:text-lumi-red transition-colors duration-200 py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
