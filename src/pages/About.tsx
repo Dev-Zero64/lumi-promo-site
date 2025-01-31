@@ -1,5 +1,6 @@
 import { Calendar, Heart, Shield, Users } from "lucide-react";
 import { NavigationBar } from "@/components/NavigationBar";
+import { CtaSection } from "@/components/CtaSection";
 
 const About = () => {
   const teamValues = [
@@ -38,9 +39,7 @@ const About = () => {
             Sobre a Lumi
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A primeira caderneta de pré-natal totalmente digital do Brasil,
-            desenvolvida por especialistas para tornar sua jornada mais segura e
-            organizada.
+            A primeira caderneta de pré-natal totalmente digital do Brasil.
           </p>
         </div>
 
@@ -61,19 +60,7 @@ const About = () => {
             </div>
           ))}
         </div>
-
-        <div className="mt-16 text-center bg-white rounded-2xl p-8 shadow-md max-w-4xl mx-auto animate-fade-in">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Faça Parte dessa Jornada
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Junte-se a milhares de gestantes que já estão utilizando a Lumi para
-            um acompanhamento pré-natal mais moderno e eficiente.
-          </p>
-          <div className="inline-block bg-gradient-to-r from-lumi-red to-pink-500 text-white rounded-full px-8 py-4 font-semibold hover:from-lumi-red/90 hover:to-pink-500/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-            Baixe Agora
-          </div>
-        </div>
+        <CtaSection />
       </div>
     </div>
   );

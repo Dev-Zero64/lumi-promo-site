@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/SFPRODISPLAYREGULAR.otf") format("opentype");
+  src: url("/public/fonts/SFMono-Regular.otf") format("opentype");
 }
 
 @font-face {
@@ -12,5 +12,5 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/SFPRODISPLAYBOLD.otf") format("opentype");
+  src: url("/public/fonts/SFMono-Bold.otf") format("opentype");
 }

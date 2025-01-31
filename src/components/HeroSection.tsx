@@ -25,7 +25,6 @@ export const HeroSection = ({
         </h1>
         <p className="text-xl text-gray-600 animate-fade-in">
           A primeira caderneta de pré-natal totalmente digital do Brasil.
-          Desenvolvida por especialistas em saúde materna e tecnologia.
         </p>
         <div className="flex flex-col gap-4 sm:flex-row animate-fade-in">
           <Button
@@ -45,7 +44,7 @@ export const HeroSection = ({
         </div>
       </div>
       <div className="relative group animate-fade-in">
-      <div className="absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-lumi-red/30 via-pink-500/20 to-transparent transform rotate-3 scale-105 blur-xl transition-all duration-300 group-hover:scale-110" />
+        <div className="absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-lumi-red/30 via-pink-500/20 to-transparent transform rotate-3 scale-105 blur-xl transition-all duration-300 group-hover:scale-110" />
         <PhoneFrame className="transform transition-all duration-300 group-hover:scale-105">
           <img
             src={screenshots[currentScreenshot]}
