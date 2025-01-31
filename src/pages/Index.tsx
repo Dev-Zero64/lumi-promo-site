@@ -144,7 +144,7 @@ const HeroSection = ({
       </div>
       <div className="relative group animate-fade-in">
         <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-lumi-red/20 to-pink-500/20 transform rotate-3 scale-105 blur-xl transition-all duration-300 group-hover:scale-110" />
-        <PhoneFrame className="transform transition-all duration-300 group-hover:scale-105 group-hover:rotate-2">
+        <PhoneFrame className="transform transition-all duration-300 group-hover:scale-105">
           <img
             src={screenshots[currentScreenshot]}
             alt={`App Screenshot ${currentScreenshot + 1}`}
@@ -225,7 +225,7 @@ const ScreenshotGallery = ({ screenshots }) => (
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
       {screenshots.map((screenshot, index) => (
         <div key={index} className="relative group">
-          <PhoneFrame className="transition-all duration-300 group-hover:scale-105 group-hover:rotate-2">
+          <PhoneFrame className="transition-all duration-300 group-hover:scale-105">
             <img
               src={screenshot}
               alt={`App Screenshot ${index + 1}`}
