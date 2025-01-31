@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import PhoneFrame from "@/components/PhoneFrame";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Apple } from "lucide-react";
 
 export const HeroSection = ({
   currentScreenshot,
@@ -38,13 +38,14 @@ export const HeroSection = ({
               )
             }
           >
+            <Apple className="h-6 w-6" />
             Baixar para iOS
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </div>
       <div className="relative group animate-fade-in">
-        <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-lumi-red/20 to-pink-500/20 transform rotate-3 scale-105 blur-xl transition-all duration-300 group-hover:scale-110" />
+      <div className="absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-lumi-red/30 via-pink-500/20 to-transparent transform rotate-3 scale-105 blur-xl transition-all duration-300 group-hover:scale-110" />
         <PhoneFrame className="transform transition-all duration-300 group-hover:scale-105">
           <img
             src={screenshots[currentScreenshot]}

@@ -30,9 +30,8 @@ const About = () => {
   ];
 
   return (
-
     <div className="min-h-screen bg-gray-50">
-        <NavigationBar />
+      <NavigationBar />
       <div className="mt-20 container mx-auto px-4 py-16">
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
