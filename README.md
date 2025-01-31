@@ -1,69 +1,49 @@
-# Welcome to your Lovable project
+# Lumi - Site Promocional
 
-## Project info
+## 📱 Sobre o Projeto
+Lumi é a primeira caderneta de pré-natal totalmente digital do Brasil. Este repositório contém o código fonte do site promocional do aplicativo Lumi, desenvolvido com React e Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/b632e49c-22f1-4a9e-aea7-9d24e3f30c65
+## 🚀 Tecnologias Utilizadas
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
 
-## How can I edit this code?
+## ⚙️ Requisitos
+- Node.js
+- npm ou yarn
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/b632e49c-22f1-4a9e-aea7-9d24e3f30c65) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 🛠️ Instalação
+1. Clone o repositório:
+```bash
+git clone [url-do-repositorio]
 ```
 
-**Edit a file directly in GitHub**
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Execute o projeto:
+```bash
+npm run dev
+# ou
+yarn dev
+```
 
-**Use GitHub Codespaces**
+## 🎯 Funcionalidades
+- Landing page responsiva
+- Apresentação das principais características do app
+- Galeria de screenshots
+- Links para download nas lojas de aplicativos
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📝 Licença
+Este projeto está sob a licença MIT.
 
-## What technologies are used for this project?
+## 👥 Autores
+- Equipe Lumi
 
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b632e49c-22f1-4a9e-aea7-9d24e3f30c65) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 📞 Contato
+Para mais informações sobre o Lumi, visite a App Store ou Play Store.
